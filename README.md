@@ -15,3 +15,13 @@ Attached Links from Instructions:
   - Deck of Cards API: http://deckofcardsapi.com/
 - Part 3:
   - Pokemon API: https://pokeapi.co/
+
+## Running the Project
+
+To run the project locally:
+
+1. run `npm install -g http-server` (if not installed already)
+2. in your project folder, run: `http-server`
+3. Open your browser and go to any of the available links when running `http-server` -> e.g. `http://127.0.0.1:8080`. Make sure to clear cache and hard refresh.
+
+   - Alt Recommended: Or use VSCode HTML Preview!
