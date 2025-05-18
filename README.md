@@ -21,7 +21,7 @@ Attached Links from Instructions:
 To run the project locally:
 
 1. run `npm install -g http-server` (if not installed already)
-2. in your project folder, run: `http-server`
+2. in your project folder and navigate to desired subproject (e.g. 1-numbers-api), run: `http-server`
 3. Open your browser and go to any of the available links when running `http-server` -> e.g. `http://127.0.0.1:8080`. Make sure to clear cache and hard refresh.
 
    - Alt Recommended: Or use VSCode HTML Preview!
