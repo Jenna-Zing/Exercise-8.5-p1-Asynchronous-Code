@@ -1,3 +1,6 @@
+/* ensures your JavaScript code only runs after the DOM is ready — meaning 
+all the HTML elements are available in the page so your script won’t throw 
+errors like document.getElementById(...) is null. */
 document.addEventListener("DOMContentLoaded", function () {
   const baseURL = "https://pokeapi.co/api/v2";
   const btn = document.getElementById("fetch-pokemon");

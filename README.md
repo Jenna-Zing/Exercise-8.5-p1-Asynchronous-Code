@@ -21,12 +21,12 @@ Attached Links from Instructions:
 To run the project locally:
 
 1. run `npm install -g http-server` (if not installed already)
-2. in your project folder and navigate to desired subproject (e.g. `cd 1-promise-only-version/1-numbers-api`), run: `http-server`. Alternatively, run `http-server -c-1` so there's no cache, and you can refresh as normal.
-3. Open your browser and go to any of the available links when running `http-server` -> e.g. `http://127.0.0.1:8080`. Make sure to right click on the refresh button and select "clear cache and hard refresh". It appears to have a cache for 3600 seconds, which we need to bypass when making changes to see it live.
+2. in your project folder and navigate to desired subproject (e.g. `cd 1-promise-only-version/1-numbers-api`), run: `http-server -c-1` (no caching so you can refresh normally). Alternatively, run `http-server` so there is cache, but you'll need to hard-refresh and clear cache.
+3. Open your browser and go to any of the available links when running `http-server` -> e.g. `http://127.0.0.1:8080`. If you're running `http-server`, make sure to right click on the refresh button and select "clear cache and hard refresh". It appears to have a cache for 3600 seconds, which we need to bypass when making changes to see it live.
 
    - Alt Recommended: Or use VSCode HTML Preview!
 
 ## Project Organization
 
 1. `1-promise-only-version` - only uses Promise.then chaining, which as you can see gets difficult to keep track of in `3-pokemon-api/step_4`. This follows like what the course videos demoed by using JS `fetch`, and `.then()` and `.catch()`. Noting, this way makes it harder to handle error messages individually...
-2. `2-async-await-version` - uses async await functions to avoid issues of promise chaining (and callback hell, where multiple promises are nested like we see in `3-pokemon-api/step_4`). We want a linear flow and better readability, with easier error-handling by using try catch in one spot.
+2. `2-async-await-version` - uses async await functions to avoid issues of promise chaining (and callback hell, where multiple promises are nested like we see in `3-pokemon-api/step_4`). We want a linear flow and better readability, with easier error-handling by using try catch for each fetch call, so if it errors out, it can proceed unlike `Promise.all()` - which is all or nothing.

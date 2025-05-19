@@ -1,8 +1,12 @@
 // ---- Initialization ----
-
+/* ensures your JavaScript code only runs after the DOM is ready — meaning 
+all the HTML elements are available in the page so your script won’t throw 
+errors like document.getElementById(...) is null. */
 document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("fetch-pokemon");
   btn.addEventListener("click", handleFetchClick);
+
+  console.log(`Running 1-promise-only-version/3-pokemon-api/step_4/app.js`);
 });
 
 // HELPER FUNCTIONS
