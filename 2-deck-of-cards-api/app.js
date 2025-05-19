@@ -1,3 +1,6 @@
+/* ensures your JavaScript code only runs after the DOM is ready — meaning 
+all the HTML elements are available in the page so your script won’t throw 
+errors like document.getElementById(...) is null. */
 document.addEventListener("DOMContentLoaded", () => {
     const baseURL = 'https://deckofcardsapi.com/api/deck';
   
