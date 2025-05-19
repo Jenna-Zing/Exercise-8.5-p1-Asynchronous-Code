@@ -35,6 +35,10 @@ function fetchPokemonDetails(pokemon) {
         image: data.sprites.front_default,
         speciesUrl: data.species.url,
       };
+    })
+    .catch((err) => {
+      console.error(`Error in fetchPokemonDetails for ${pokemon.name}:`, err);
+      return null; // Return null so we can filter it out later
     });
 }
 
@@ -53,6 +57,10 @@ function fetchSpeciesDescription(speciesUrl) {
       return entry
         ? entry.flavor_text.replace(/\f/g, " ")
         : "No description available.";
+    })
+    .catch((err) => {
+      console.error("Error in fetchSpeciesDescription:", err);
+      return "Description not available due to an error.";
     });
 }
 
