@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const baseURL = "https://deckofcardsapi.com/api/deck";
 
+  console.log(`Running 2-async-await-version/2-deck-of-cards-api/app.js`);
+
   // === PART 1 ===
   // Draw a single card from a newly shuffled deck
   // uncomment only part 1 to test it; comment rest.
